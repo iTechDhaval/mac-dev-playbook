@@ -15,9 +15,18 @@ This is a work in progress, and is mostly a means for me to document my current 
 
 ## Installation
 
-  1. Ensure Apple's command line tools are installed (`xcode-select --install` to launch the installer).
-  2. [Install Ansible](http://docs.ansible.com/intro_installation.html).
-  3. Clone this repository to your local drive.
+  1. Download `bootstrap.sh` file using curl command
+  
+    curl -O https://raw.githubusercontent.com/iTechDhaval/mac-dev-playbook/master/bootstrap.sh
+    
+  2. Make it executable
+  
+    chmod +x bootstrap.sh
+    
+  3. Execute it to install required dependancies like xcode tools, ansible and clone this repository.
+  
+    ./bootstrap.sh
+
   4. Run `$ ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
   5. Run `ansible-playbook main.yml -i inventory -K` inside this directory. Enter your account password when prompted.
 
