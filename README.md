@@ -15,20 +15,12 @@ This is a work in progress, and is mostly a means for me to document my current 
 
 ## Installation
 
-  1. Download `bootstrap.sh` file using curl command
+  1. Download and execute `bootstrap.sh` file using below command
   
-    curl -O https://raw.githubusercontent.com/iTechDhaval/mac-dev-playbook/master/bootstrap.sh
+    curl -s https://raw.githubusercontent.com/iTechDhaval/mac-dev-playbook/master/bootstrap.sh | bash
     
-  2. Make it executable
-  
-    chmod +x bootstrap.sh
-    
-  3. Execute it to install required dependancies like xcode tools, ansible and clone this repository.
-  
-    ./bootstrap.sh
-
-  4. Run `$ ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
-  5. Run `ansible-playbook main.yml -i inventory -K` inside this directory. Enter your account password when prompted.
+  2. Run `$ ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
+  3. Run `ansible-playbook main.yml -i inventory -K` inside this directory. Enter your account password when prompted.
 
 > Note: If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run `brew doctor` to see if this is the case.
 
