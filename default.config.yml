@@ -77,6 +77,7 @@ homebrew_cask_apps:
   - evernote
   - the-unarchiver
   - jetbrains-toolbox
+  - iterm2
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
