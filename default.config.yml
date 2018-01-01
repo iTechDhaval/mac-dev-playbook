@@ -43,6 +43,7 @@ homebrew_installed_packages:
   - pv
   - wget
   - wrk
+  - highlight
 
 homebrew_taps:
   - homebrew/core
