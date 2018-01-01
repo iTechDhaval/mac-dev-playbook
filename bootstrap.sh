@@ -34,7 +34,7 @@ if [[ ! -x /usr/local/bin/git ]]; then
 fi
 
 # Download and install python
-if [[ ! -x /usr/local/bin/python ]]; then
+if [[ ! -x /usr/local/bin/python ]] && [[ ! -x /usr/bin/python ]]; then
     echo "Info   | Install   | python"
     brew install python --framework --with-brewed-openssl
 fi
@@ -45,18 +45,18 @@ if [[ ! -x /usr/local/bin/ansible ]]; then
 fi
 
 # Make the code directory
-mkdir -p $SRC_DIRECTORY
+mkdir -p "$SRC_DIRECTORY"
 
 # FIX ANSIBLE PERMISSIONS
-chmod -R 750 $SRC_DIRECTORY
+chmod -R 750 "$SRC_DIRECTORY"
 
 # Clone down ansible
 if [[ ! -d $ANSIBLE_DIRECTORY ]]; then
-    git clone -b devel git@github.com:iTechDhaval/mac-dev-playbook.git $ANSIBLE_DIRECTORY
+    git clone -b devel git@github.com:iTechDhaval/mac-dev-playbook.git "$ANSIBLE_DIRECTORY"
 fi
 
 # FIX ANSIBLE PERMISSIONS
-chmod -R 660 $ANSIBLE_DIRECTORY/inventory
+chmod -R 660 "$ANSIBLE_DIRECTORY/inventory"
 
 # # Use the forked Ansible
 # source $ANSIBLE_DIRECTORY/hacking/env-setup > /dev/null
