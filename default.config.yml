@@ -51,6 +51,7 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - iterm2
   - docker
   - dropbox
   - box-sync
@@ -60,15 +61,11 @@ homebrew_cask_apps:
   - handbrake
   - licecap
   - macvim
-  - sequel-pro
   - skitch
   - slack
   - sublime-text
-  - transmit
   - vagrant
   - virtualbox
-  - beyond-compare
-  - microsoft-office
   - cleanmymac
   - flux
   - coconutbattery
@@ -78,7 +75,7 @@ homebrew_cask_apps:
   - evernote
   - the-unarchiver
   - jetbrains-toolbox
-  - iterm2
+  - microsoft-office
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
