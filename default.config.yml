@@ -12,6 +12,7 @@ dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
 dotfiles_files:
   - .bash_profile
   - .gitignore
+  - .gitconfig
   - .inputrc
   - .osx
   - .vimrc
@@ -37,13 +38,13 @@ homebrew_installed_packages:
   - node
   - nvm
   - ssh-copy-id
-  - cowsay
   - readline
   - openssl
   - pv
   - wget
   - wrk
   - highlight
+  - wxpython
 
 homebrew_taps:
   - homebrew/core
@@ -99,8 +100,9 @@ npm_packages: []
   # - name: webpack
   #   state: present # present/absent/latest, default: present
   #   version: "^2.6" # default: N/A
-pip_packages:
-  - name: youtube-dlg
+pip_packages: []
+  # - name: twodict
+  # - name: youtube-dlg
   # - name: mkdocs
   #   state: present # present/absent/latest, default: present
   #   version: "0.16.3" # default: N/A
