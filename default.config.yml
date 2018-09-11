@@ -16,12 +16,12 @@ dotfiles_files:
   - .inputrc
   - .osx
   - .vimrc
+  - .zshrc
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
   - bash-completion
-  - chromedriver
   - doxygen
   - gettext
   - gifsicle
@@ -48,7 +48,7 @@ homebrew_installed_packages:
 
 homebrew_taps:
   - homebrew/core
-  - caskroom/cask
+  - homebrew/cask
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
