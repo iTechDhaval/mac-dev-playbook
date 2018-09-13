@@ -45,6 +45,7 @@ homebrew_installed_packages:
   - wrk
   - highlight
   - wxpython
+  - ntfs-3g
 
 homebrew_taps:
   - homebrew/core
@@ -52,6 +53,7 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - osxfuse
   - iterm2
   - docker
   - dropbox
@@ -83,7 +85,7 @@ mas_installed_apps: []
 mas_email: ""
 mas_password: ""
 
-osx_script: "~/.osx --no-restart"
+osx_script: "~/.osx --no-restart --ntfs-3g-support"
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
